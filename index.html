@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shared Views</title>
+    <style>
+      #map{
+        position: absolute;
+        width: 99%;
+        height: 800px;
+        top: 500px;
+      }
+      .map {
+        width: 100%;
+        height:400px;
+      }
+      @media (min-width: 800px) {
+        .wrapper {
+          display: flex;
+        }
+        .half {
+          padding: 0 10px;
+          width: 50%;
+          float: left;
+        }
+      }
+
+      .map .ol-zoom .ol-zoom-out {
+        margin-top: 204px;
+      }
+      .map .ol-zoomslider {
+        background-color: transparent;
+        top: 2.3em;
+      }
+
+      .map .ol-touch .ol-zoom .ol-zoom-out {
+        margin-top: 212px;
+      }
+      .map .ol-touch .ol-zoomslider {
+        top: 2.75em;
+      }
+
+      .map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
+      .map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+        top: 3px;
+      }
+
+      .map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
+      .map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+        top: 232px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="half">
+        <h4>Road</h4>
+        <div id="roadMap" class="map"></div>
+      </div>
+      <div class="half">
+        <h4>Aerial</h4>
+        <div id="aerialMap" class="map"></div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

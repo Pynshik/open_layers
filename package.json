@@ -1,0 +1,20 @@
+{
+  "name": "open_layers",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Example using OpenLayers with Parcel",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "dependencies": {
+    "ol": "^6.6.1",
+    "ol-ext": "^3.2.4",
+    "ol-hashed": "^2.0.0",
+    "ol-mapbox-style": "^6.4.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "browserslist": "defaults"
+}
